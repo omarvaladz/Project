@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlowerZ - Sombreros</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fyiStyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="img/Logo_Black.ico">
+    <link rel="stylesheet" href="lightbox2/css/lightbox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <style>
+        body {
+            background-image: url('img/japan.jpg');
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/Logo_Gray.png" alt="Logo" width="50" height="50">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="intro.html">Introducción</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="dinamica.html">Dinámica - Decálogos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="fc.html">FODA - CATWDA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="books.html">Libros</a>
+                </li>                                
+                <li class="nav-item">
+                    <a class="nav-link" href="test.html">Test Decálogos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="activity.html">Actividad Integradora</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-mt-6">
+        <h1 class="text-center">Sombreros</h1>
+        <div class="row">
+
+            <!-- Cuadro de Sombrero 1 -->
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img src="img/sombrero1.jpg" class="card-img-top" alt="Sombrero 1"><br>
+                    <div class="card-body">
+                        <p class="card-text text-white">Hechos</p>
+                        <ul id="aspectos-list1" class="list-group">
+                            <!-- Los aspectos se agregarán aquí -->
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <input type="text" id="aspecto1" class="form-control" placeholder="Agregar aspecto">
+                        <button id="add-aspecto1" class="btn btn-primary mt-2">Agregar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cuadro de Sombrero 2 -->
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img src="img/sombrero2.jpg" class="card-img-top" alt="Sombrero 2">
+                    <div class="card-body">
+                        <p class="card-text text-white">Positivo</p>
+                        <ul id="aspectos-list2" class="list-group">
+                            <!-- Los aspectos se agregarán aquí -->
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <input type="text" id="aspecto2" class="form-control" placeholder="Agregar aspecto">
+                        <button id="add-aspecto2" class="btn btn-primary mt-2">Agregar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cuadro de Sombrero 3 -->
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img src="img/sombrero3.jpg" class="card-img-top" alt="Sombrero 3">
+                    <div class="card-body">
+                        <p class="card-text text-white">Negativo</p>
+                        <ul id="aspectos-list3" class="list-group">
+                            <!-- Los aspectos se agregarán aquí -->
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <input type="text" id="aspecto3" class="form-control" placeholder="Agregar aspecto">
+                        <button id="add-aspecto3" class="btn btn-primary mt-2">Agregar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cuadro de Sombrero 4 -->
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img src="img/sombrero4.jpg" class="card-img-top" alt="Sombrero 4">
+                    <div class="card-body">
+                        <p class="card-text text-white">Emociones</p>
+                        <ul id="aspectos-list4" class="list-group">
+                            <!-- Los aspectos se agregarán aquí -->
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <input type="text" id="aspecto4" class="form-control" placeholder="Agregar aspecto">
+                        <button id="add-aspecto4" class="btn btn-primary mt-2">Agregar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cuadro de Sombrero 5 -->
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img src="img/sombrero5.jpg" class="card-img-top" alt="Sombrero 5">
+                    <div class="card-body">
+                        <p class="card-text text-white">Nuevas ideas</p>
+                        <ul id="aspectos-list5" class="list-group">
+                            <!-- Los aspectos se agregarán aquí -->
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <input type="text" id="aspecto5" class="form-control" placeholder="Agregar aspecto">
+                        <button id="add-aspecto5" class="btn btn-primary mt-2">Agregar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cuadro de Sombrero 6 -->
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img src="img/sombrero6.jpg" class="card-img-top" alt="Sombrero 6">
+                    <div class="card-body">
+                        <p class="card-text text-white">Gestión</p>
+                        <ul id="aspectos-list6" class="list-group">
+                            <!-- Los aspectos se agregarán aquí -->
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <input type="text" id="aspecto6" class="form-control" placeholder="Agregar aspecto">
+                        <button id="add-aspecto6" class="btn btn-primary mt-2">Agregar</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <section>
+        <button id="guardar-imagen" class="btn btn-primary mt-3">Guardar como Imagen</button>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Autor</h3>
+                    <p>Nombre: Omar Valadez Flores</p>
+                    <p>Correo electrónico: ovaladez03@alumnos.uaq.mx</p>
+                    <p>No. Expediente: 292643</p>
+                </div>
+                <div class="col-md-6">
+                    <h3>Datos sobre el Autor</h3>
+                    <a href="fyi.html" class="interest-icon"><i class="fas fa-user"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="scripts/hats.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

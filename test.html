@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlowerZ - Test Decálogos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fyiStyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="img/Logo_Black.ico">
+    <link rel="stylesheet" href="lightbox2/css/lightbox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            background-image: url('img/japan_white.jpg');
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/Logo_Gray.png" alt="Logo" width="50" height="50">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="intro.html">Introducción</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="dinamica.html">Dinámica - Decálogos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="fc.html">FODA - CATWDA</a>
+                </li>                
+                <li class="nav-item">
+                    <a class="nav-link" href="hats.html">Sombreros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="books.html">Libros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="activity.html">Actividad Integradora</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Relaciona el concepto con su definición</h1>
+        <div class="game-container">
+            <div class="concepts">
+                <div class="concept" draggable="true" data-correct="Sentido común">Sentido común</div>
+                <div class="concept" draggable="true" data-correct="Puntualidad">Puntualidad</div>
+                <div class="concept" draggable="true" data-correct="Austeridad">Austeridad</div>
+                <div class="concept" draggable="true" data-correct="Humildad">Humildad</div>
+                <div class="concept" draggable="true" data-correct="Resiliencia">Resiliencia</div>
+                <div class="concept" draggable="true" data-correct="Perseverancia">Perseverancia</div>
+                <div class="concept" draggable="true" data-correct="Gusto por el trabajo">Gusto por el trabajo</div>
+                <div class="concept" draggable="true" data-correct="Afán por el ahorro y la inversión">Afán por el ahorro y la inversión</div>
+                <div class="concept" draggable="true" data-correct="Disciplina">Disciplina</div>
+                <div class="concept" draggable="true" data-correct="Educación y aprendizaje">Educación y aprendizaje</div>
+            </div>
+            <div class="descriptions">
+                <div class="description" data-correct="Utiliza el razonamiento y la lógica en tu toma de decisiones. No te dejes llevar solo por emociones.">Utiliza el razonamiento y la lógica en tu toma de decisiones. No te dejes llevar solo por emociones.</div>
+                <div class="description" data-correct="Valora el tiempo tuyo y de los demás.">Valora el tiempo tuyo y de los demás.</div>
+                <div class="description" data-correct="Gasta con prudencia y evita el desperdicio.">Gasta con prudencia y evita el desperdicio.</div>
+                <div class="description" data-correct="Reconoce tus limitaciones y valora a los demás sin importar su posición o estatus.">Reconoce tus limitaciones y valora a los demás sin importar su posición o estatus.</div>
+                <div class="description" data-correct="Aprende a enfrentar los desafíos y dificultades con determinación y fortaleza.">Aprende a enfrentar los desafíos y dificultades con determinación y fortaleza.</div>
+                <div class="description" data-correct="Mantén tu esfuerzo constante en busca de tus metas, incluso cuando enfrentes obstáculos.">Mantén tu esfuerzo constante en busca de tus metas, incluso cuando enfrentes obstáculos.</div>
+                <div class="description" data-correct="Mientras mayor aprecio se tenga por la profesión personal, mejor se desempeñará ésta.">Mientras mayor aprecio se tenga por la profesión personal, mejor se desempeñará ésta.</div>
+                <div class="description" data-correct="La posibilidad de que los gastos superen a los ingresos siempre será mayor en estos tiempos.">La posibilidad de que los gastos superen a los ingresos siempre será mayor en estos tiempos.</div>
+                <div class="description" data-correct="Para lograr tus objetivos y mantener una vida ordenada.">Para lograr tus objetivos y mantener una vida ordenada.</div>
+                <div class="description" data-correct="El conocimiento es una herramienta poderosa.">El conocimiento es una herramienta poderosa.</div>
+            </div>
+        </div>
+        <button id="checkButton">Terminar intento</button>
+        <p id="score"></p>
+        <p id="attempts">Intentos restantes: 2</p>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Autor</h3>
+                    <p>Nombre: Omar Valadez Flores</p>
+                    <p>Correo electrónico: ovaladez03@alumnos.uaq.mx</p>
+                    <p>No. Expediente: 292643</p>
+                </div>
+                <div class="col-md-6">
+                    <h3>Datos sobre el Autor</h3>
+                    <a href="fyi.html" class="interest-icon"><i class="fas fa-user"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="scripts/testScript.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

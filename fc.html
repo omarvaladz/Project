@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlowerZ - FODA | CATWDA</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fyistyles.css">
+    <link rel="icon" type="image/x-icon" href="img/Logo_Black.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <style>
+        body{
+            background-image: url('img/japan_white.jpg');
+            /* Add your background image path */
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/Logo_Gray.png" alt="Logo" width="50" height="50">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="intro.html">Introducción</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="dinamica.html">Dinámica - Decálogos</a>
+                </li>                
+                <li class="nav-item">
+                    <a class="nav-link" href="hats.html">Sombreros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="books.html">Libros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="test.html">Test Decálogos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="activity.html">Actividad Integradora</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-mt-6">
+        <h1 class="text-center">FODA</h1>
+        <div class="row">
+            <!-- Cuadro de Fortalezas -->
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h3>Fortalezas</h3>
+                    </div>
+                    <div class="card-body">
+                        <!-- Aquí se mostrarán los aspectos de Fortalezas -->
+                        <ul id="fortalezas-list" class="list-group">
+                            <!-- Los aspectos se agregarán aquí -->
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <input type="text" id="fortalezas-input" class="form-control" placeholder="Agregar aspecto">
+                        <button id="add-fortaleza" class="btn btn-primary mt-2">Agregar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Repite la estructura para Debilidades, Oportunidades y Amenazas -->
+            <!-- Cuadro de Debilidades -->
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h3>Debilidades</h3>
+                    </div>
+                    <div class="card-body">
+                        <!-- Aquí se mostrarán los aspectos de Debilidades -->
+                        <ul id="debilidades-list" class="list-group">
+                            <!-- Los aspectos se agregarán aquí -->
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <input type="text" id="debilidades-input" class="form-control" placeholder="Agregar aspecto">
+                        <button id="add-debilidad" class="btn btn-primary mt-2">Agregar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cuadro de Oportunidades -->
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h3>Oportunidades</h3>
+                    </div>
+                    <div class="card-body">
+                        <!-- Aquí se mostrarán los aspectos de Oportunidades -->
+                        <ul id="oportunidades-list" class="list-group">
+                            <!-- Los aspectos se agregarán aquí -->
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <input type="text" id="oportunidades-input" class="form-control" placeholder="Agregar aspecto">
+                        <button id="add-oportunidad" class="btn btn-primary mt-2">Agregar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cuadro de Amenazas -->
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h3>Amenazas</h3>
+                    </div>
+                    <div class="card-body">
+                        <!-- Aquí se mostrarán los aspectos de Amenazas -->
+                        <ul id="amenazas-list" class="list-group">
+                            <!-- Los aspectos se agregarán aquí -->
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <input type="text" id="amenazas-input" class="form-control" placeholder="Agregar aspecto">
+                        <button id="add-amenaza" class="btn btn-primary mt-2">Agregar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Sección de CATWDA -->
+    <div class="container-mt-5">
+        <h1 class="text-center">CATWDA</h1>
+        <div class="row">
+            <!-- Cuadro de Clientes -->
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h3>Clientes</h3>
+                    </div>
+                    <div class="card-body">
+                        <!-- Aquí se mostrarán los aspectos de Clientes -->
+                        <ul id="clientes-list" class="list-group">
+                            <!-- Los aspectos se agregarán aquí -->
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <input type="text" id="clientes-input" class="form-control" placeholder="Agregar aspecto">
+                        <button id="add-cliente" class="btn btn-primary mt-2">Agregar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Repite la estructura para Actores, Transformación, Weltanschauung, Dueños, Ambiente -->
+            <!-- Cuadro de Actores -->
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h3>Actores</h3>
+                    </div>
+                    <div class="card-body">
+                        <!-- Aquí se mostrarán los aspectos de Actores -->
+                        <ul id="actores-list" class="list-group">
+                            <!-- Los aspectos se agregarán aquí -->
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <input type="text" id="actores-input" class="form-control" placeholder="Agregar aspecto">
+                        <button id="add-actor" class="btn btn-primary mt-2">Agregar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cuadro de Transformación -->
+            <!-- Repite la estructura para Transformación, Weltanschauung, Dueños, Ambiente -->
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h3>Transformación</h3>
+                    </div>
+                    <div class="card-body">
+                        <!-- Aquí se mostrarán los aspectos de Transformación -->
+                        <ul id="transformacion-list" class="list-group">
+                            <!-- Los aspectos se agregarán aquí -->
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <input type="text" id="transformacion-input" class="form-control" placeholder="Agregar aspecto">
+                        <button id="add-transformacion" class="btn btn-primary mt-2">Agregar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cuadro de Weltanschauung (Visión) -->
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h3>Weltanschauung (Visión)</h3>
+                    </div>
+                    <div class="card-body">
+                        <!-- Aquí se mostrarán los aspectos de Weltanschauung (Visión) -->
+                        <ul id="weltanschauung-list" class="list-group">
+                            <!-- Los aspectos se agregarán aquí -->
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <input type="text" id="weltanschauung-input" class="form-control" placeholder="Agregar aspecto">
+                        <button id="add-weltanschauung" class="btn btn-primary mt-2">Agregar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cuadro de Dueños -->
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h3>Dueños</h3>
+                    </div>
+                    <div class="card-body">
+                        <!-- Aquí se mostrarán los aspectos de Dueños -->
+                        <ul id="duenos-list" class="list-group">
+                            <!-- Los aspectos se agregarán aquí -->
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <input type="text" id="duenos-input" class="form-control" placeholder="Agregar aspecto">
+                        <button id="add-dueno" class="btn btn-primary mt-2">Agregar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cuadro de Ambiente -->
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h3>Ambiente</h3>
+                    </div>
+                    <div class="card-body">
+                        <!-- Aquí se mostrarán los aspectos de Ambiente -->
+                        <ul id="ambiente-list" class="list-group">
+                            <!-- Los aspectos se agregarán aquí -->
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <input type="text" id="ambiente-input" class="form-control" placeholder="Agregar aspecto">
+                        <button id="add-ambiente" class="btn btn-primary mt-2">Agregar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <button id="guardar-imagen" class="btn btn-primary mt-3">Guardar como Imagen</button>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Autor</h3>
+                    <p>Nombre: Omar Valadez Flores</p>
+                    <p>Correo electrónico: ovaladez03@alumnos.uaq.mx</p>
+                    <p>No. Expediente: 292643</p>
+                </div>
+                <div class="col-md-6">
+                    <h3>Datos sobre el Autor</h3>
+                    <a href="fyi.html" class="interest-icon"><i class="fas fa-user"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/fc.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

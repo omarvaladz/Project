@@ -1,0 +1,642 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 15px;
+}
+
+.navbar-brand {
+    display: flex;
+    justify-content: center;
+    /* Horizontally center */
+    align-items: center;
+    /* Vertically center */
+}
+
+.navbar-brand img {
+    width: 70px;
+    height: 70px;
+}
+
+.navbar-toggler {
+    border-color: rgba(0, 0, 0, 0.2);
+}
+
+.nav-item {
+    margin-right: 20px;
+}
+
+#introduction {
+    position: relative;
+    /* Change position to relative */
+    background-image: url('/img/japan.gif');
+    /* Add your background image path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 150px 0;
+    /* Adjust padding as needed */
+    color: white;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+
+#introduction h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+#conf {
+    position: relative;
+    /* Change position to relative */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 50px 0;
+    /* Adjust padding as needed */
+    color: white;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+
+#conf h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+#conf h1::before {
+    content: "";
+    position: absolute;
+    align-content: center;
+    width: 100vw;
+    height: 90%;
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Dark grey label color */
+    opacity: 50%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+#intro {
+    position: relative;
+    /* Change position to relative */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 50px 0;
+    /* Adjust padding as needed */
+    color: white;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+
+#intro h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+#intro h1::before {
+    content: "";
+    position: absolute;
+    align-content: center;
+    width: 100vw;
+    height: 90%;
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Dark grey label color */
+    opacity: 85%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+#introduction h1::before {
+    content: "";
+    position: absolute;
+    align-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Dark grey label color */
+    opacity: 50%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+#landing {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.landing-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+    color: white;
+}
+
+.landing-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.landing-content h1::before {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Dark grey label color */
+    opacity: 85%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.btn-lower {
+    margin-top: 100px;
+    /* Adjust this value */
+}
+
+.gif-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.gif-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#landing h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+#landing p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.btn-primary {
+    background-color: #343a40;
+    padding: 12px 28px;
+    font-size: 1.3rem;
+    border-radius: 20px;
+    transition: background-color 0.3s, transform 0.2s;
+    border: none;
+    box-shadow: none;
+}
+
+.btn-primary:hover {
+    background-color: #000;
+    transform: scale(1.05);
+}
+
+.section {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.section p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+#contact {
+    background-color: #f8f9fa;
+}
+
+#contact h2 {
+    color: #333;
+}
+
+#contact p {
+    color: #777;
+}
+
+.image-container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.image-container img {
+    margin: 0 10px;
+    height: 1333.3333333333px;
+    width: 533.3333333333px;
+    border: 2px solid transparent;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.image-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.image-container a {
+    display: inline-block;
+    margin: 10px;
+}
+
+.lb-overlay {
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+/* Lightbox Navigation Arrows */
+.lb-prev,
+.lb-next {
+    color: white;
+    font-size: 30px;
+}
+
+/* Lightbox Close Button */
+.lb-close {
+    color: white;
+    font-size: 35px;
+}
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    /* Adjust the height as needed */
+    position: relative;
+    /* This is important for positioning the carousel */
+}
+
+.carousel-inner {
+    position: relative;
+    width: 1150px;
+    height: 750px;
+}
+
+#carouselExample {
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        margin-top: 20px;
+    }
+
+    .nav-item {
+        margin-right: 10px;
+    }
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.footer h3 {
+    margin-bottom: 20px;
+}
+
+.footer p {
+    margin-bottom: 10px;
+}
+
+.interest-icon {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+.interest-icon:hover {
+    color: #000;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 30px 0;
+    }
+
+    .social-icon {
+        font-size: 20px;
+    }
+}
+
+#logo-container-main {
+    margin-bottom: 50px;
+}
+
+#logo-container-main img {
+    width: 220px;
+    height: 220px;
+    border-radius: 30px;
+    animation: levitate 2s infinite alternate ease-in-out;
+}
+
+@keyframes levitate {
+    from {
+        transform: translateY(-10);
+    }
+
+    to {
+        transform: translateY(-20px);
+        /* La distancia en la que la imagen levita */
+    }
+}
+
+/* Estilos para la sección de Ishikawa */
+
+/* Estilos para el modelo de Ishikawa */
+#ishikawa-diagram {
+    width: 100%;
+    max-width: 800px;
+    /* Ajusta el ancho máximo según tu diseño */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#ishikawa-diagram h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Estilos para las ramas del modelo de Ishikawa */
+.ishikawa-branch {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.ishikawa-branch .branch-label {
+    flex: 1;
+    font-size: 1.2rem;
+    padding: 5px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.ishikawa-branch .branch-content {
+    flex: 5;
+    font-size: 1rem;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+/* Estilos para los elementos dentro de las ramas */
+.ishikawa-item {
+    margin-bottom: 5px;
+}
+
+/* Estilos para los íconos de categoría en las ramas */
+.ishikawa-category-icon {
+    font-size: 1.2rem;
+    margin-right: 5px;
+    color: #007bff;
+}
+
+/* Estilos para el ícono de eliminar rama */
+.delete-branch-icon {
+    font-size: 1.2rem;
+    color: #ff0000;
+    cursor: pointer;
+}
+
+
+#ishikawa {
+    background-color: #fff;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: left;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+#ishikawa-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ajusta la altura para centrar verticalmente */
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#rama-input {
+    width: 70%;
+    padding: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+#titulo-ishikawa {
+    width: 70%;
+    padding: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+#agregar-rama {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    background-color: #343a40;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#ramas-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#ramas-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+#confirmar-diagrama {
+    padding: 10px 15px;
+    background-color: #343a40;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#guardar-pdf {
+    padding: 10px 15px;
+    background-color: #343a40;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#pareto {
+    margin-top: 20px;
+    display: none;
+}
+
+/* Estilos para la sección de FODA y CATWDA */
+#foda-catwda {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+#foda-catwda h2 {
+    font-size: 2rem;
+}
+
+#foda-input,
+#catwda-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#guardar-foda-catwda {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#frecuencia-input {
+    margin-top: 20px;
+    padding-left: 15px;
+}
+
+.frecuencia{
+    padding-right: 20px;
+}
+
+
+.fondo-2 h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
+    color: white;
+    padding: 20px;
+}
+
+.fondo-2 h1::before {
+    content: "";
+    position: absolute;
+    align-content: center;
+    width: 100vw;
+    height: 125px;
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Dark grey label color */
+    opacity: 90%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+#ishikawa-content h2 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
+    color: white;
+    padding: 20px;
+}
+
+#ishikawa-content h2::before {
+    content: "";
+    position: absolute;
+    align-content: center;
+    width: 100vw;
+    height: 125px;
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Dark grey label color */
+    opacity: 90%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input[type="radio"] {
+    margin: 10px;
+}
+
+input[type="submit"] {
+    margin-top: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#results {
+    color: #fff;
+    font-size: 18px;
+    margin-top: 20px;
+}

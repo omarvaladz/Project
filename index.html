@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlowerZ</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/x-icon" href="img/Logo_Black.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <style>
+        #ishikawa{
+            background-image: url('img/japan.gif');
+            /* Add your background image path */
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="dinamica.html">Dinámica - Decálogos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#ishikawa">Ishikawa - Pareto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="fc.html">FODA - CATWDA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="books.html">Libros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="test.html">Test Decálogos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="activity.html">Actividad Integradora</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    
+
+    <section id="landing" class="text-center">
+        <div class="landing-content">
+            <div id="logo-container-main">
+                <img src="img/Logo_Black.png" alt="Logo Main">
+            </div>
+            <h1>FlowerZ | Project</h1>
+            <a href="intro.html" class="btn btn-primary btn-lg btn-lower">Introducción</a>
+            <a href="hats.html" class="btn btn-primary btn-lg btn-lower">Sombreros</a>
+        </div>
+        <div class="gif-container">
+            <img src="img/landingPage.gif" alt="Landing GIF">
+        </div>
+    </section>
+
+
+    <section class="fondo-2">
+        <h1>Diagrama de Ishikawa</h1>
+        <section id="ishikawa">
+            <div id="ishikawa-content"> <!-- Nuevo contenedor para centrar contenido -->
+                
+                <input type="text" id="titulo-ishikawa" placeholder="Ingrese el título del diagrama Ishikawa">
+                <input type="text" id="rama-input" placeholder="Ingrese una rama">
+                <input type="number" id="frecuencia-input" placeholder="Ingrese la frecuencia"><br>
+                <button id="agregar-rama">Agregar Rama</button>
+                <ul id="ramas-list"></ul>
+                <div><button id="confirmar-diagrama">Confirmar Diagrama</button></div>
+            </div>
+        </section>
+        <div id="pareto">
+            <h1 id="titulo-pareto"></h1>
+            <canvas id="pareto-chart"></canvas>
+        </div>
+    </section>
+
+    <section>
+        <button id="guardar-imagen" class="btn btn-primary mt-3">Guardar como Imagen</button>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Autor</h3>
+                    <p>Nombre: Omar Valadez Flores</p>
+                    <p>Correo electrónico: ovaladez03@alumnos.uaq.mx</p>
+                    <p>No. Expediente: 292643</p>
+                </div>
+                <div class="col-md-6">
+                    <h3>Datos sobre el Autor</h3>
+                    <a href="fyi.html" class="interest-icon"><i class="fas fa-user"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+
+    <script src="scripts/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
